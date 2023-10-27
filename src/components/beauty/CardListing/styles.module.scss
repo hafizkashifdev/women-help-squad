@@ -1,0 +1,29 @@
+@import "../../../bootstrap/_variables.scss";
+@import "../../../bootstrap/mixins";
+
+.cardListing {
+  margin-top: 40px;
+  padding: 80px 0;
+  .card {
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: $box-shadow-card2;
+    .imageBox {
+      max-width: 100%;
+      margin-bottom: 16px;
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+    p {
+      font-family: $font-family;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0px;
+      color: #555770;
+      text-align: left;
+    }
+  }
+}

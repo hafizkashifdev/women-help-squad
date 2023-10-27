@@ -1,0 +1,31 @@
+@import "../../../bootstrap/_variables.scss";
+@import "../../../bootstrap/mixins";
+
+.BlogSide {
+  padding: 60px 0;
+  position: relative;
+  max-width: 1340px;
+  overflow: hidden;
+  border-radius: 35px;
+  margin: 50px auto !important;
+  h2 {
+    @include heading2;
+
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+  }
+  .imageBox2 {
+    max-height: 487px;
+  }
+  .CareerCard2 {
+    box-shadow: none;
+    h5 {
+      max-width: 401;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 28.13px;
+      margin-bottom: 20px;
+    }
+  }
+}

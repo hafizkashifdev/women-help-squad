@@ -1,0 +1,58 @@
+@import "../../../bootstrap/_variables.scss";
+@import "../../../bootstrap/mixins";
+
+.ArticlesCard2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .imageBox {
+    max-height: 150px;
+    overflow: hidden;
+    border-radius: 8px;
+    max-width: 248px;
+    img {
+      max-width: 100%;
+      object-fit: cover;
+      width: 100%;
+      max-height: 150px;
+    }
+  }
+  .contentBox {
+    margin-left: 20px;
+    .category {
+      //styleName: Text sm/Medium;
+      min-height: 28px;
+      background: #fcbfcb33;
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 100px;
+      width: 100%;
+
+      font-family: $font-family;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0em;
+
+      color: $color-primary;
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-family: $font-family;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      color: #101828;
+      text-align: left;
+    }
+  }
+}

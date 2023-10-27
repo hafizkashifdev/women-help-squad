@@ -1,0 +1,108 @@
+@import "../../../bootstrap/_variables.scss";
+@import "../../../bootstrap/mixins";
+
+.HeroSection {
+  padding: 60px 0;
+  background: url("../../../assets/beauty/hero/bg.png"),
+    linear-gradient(85.97deg, #160c0f 28.73%, rgba(24, 20, 21, 0) 109.79%);
+
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  min-height: 900px;
+  @media screen and (max-width: 575px) {
+    align-items: flex-start;
+    min-height: auto;
+  }
+  .box {
+    position: relative;
+    z-index: 2;
+
+    h1 {
+      font-family: $font-family;
+      font-size: 70px;
+      font-weight: 700;
+      line-height: 85px;
+      color: white;
+      position: relative;
+      max-width: 960px;
+      letter-spacing: 0em;
+      z-index: 2;
+      margin: 0;
+      margin-top: 32px;
+      @media screen and (max-width: 1600px) {
+        max-width: 648px;
+      }
+      @media screen and (max-width: 990px) {
+        font-size: 68px;
+      }
+      @media screen and (max-width: 575px) {
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+    p {
+      margin-top: 32px;
+      font-family: $font-family;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 28px;
+      color: white;
+      max-width: 606px;
+      letter-spacing: 0px;
+      @media screen and (max-width: 1600px) {
+        max-width: 497px;
+      }
+      @media screen and (max-width: 1280px) {
+        max-width: 430px;
+        font-size: 14px;
+      }
+      @media screen and (max-width: 990px) {
+        max-width: 100%;
+      }
+    }
+    .buttonSection {
+      display: flex;
+      margin-top: 50px;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+      button {
+        max-width: 120px;
+        &:first-child {
+          @include HeroButton(white);
+        }
+        &:last-child {
+          @include HeroButton(transparent);
+        }
+      }
+    }
+    .girl {
+      max-width: 100%;
+      position: absolute;
+      right: -70px;
+      z-index: 1;
+      bottom: -200px;
+      height: auto;
+      @media screen and (max-width: 1400px) {
+        right: -100px;
+        width: 800px;
+      }
+      @media screen and (max-width: 1280px) {
+        right: -100px;
+        width: 750px;
+      }
+
+      @media screen and (max-width: 1190px) {
+        width: 650px;
+      }
+      @media screen and (max-width: 990px) {
+        display: none;
+      }
+    }
+  }
+}

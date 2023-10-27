@@ -1,0 +1,37 @@
+@import "../../../bootstrap/_variables.scss";
+@import "../../../bootstrap/mixins";
+
+.banner {
+  padding: 80px 0;
+  .box {
+    min-height: 300px;
+    background-color: $card-bg-;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    flex-direction: column;
+    h2 {
+      //styleName: Heading/H5 24px;
+      @include heading2;
+
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    p {
+      //styleName: Text lg/Regular;
+      font-family: $font-family;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0em;
+      color: #475467;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    button {
+      @include ThemeButton($color-primary);
+      max-width: 205px;
+    }
+  }
+}

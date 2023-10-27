@@ -1,0 +1,45 @@
+@import "../../../bootstrap/_variables.scss";
+@import "../../../bootstrap/mixins";
+
+.doctorCard {
+  text-align: center;
+  width: 100%;
+  .doctorImage {
+    background: #aeb4af0d;
+    img {
+      max-height: 255px;
+      object-fit: cover;
+    }
+  }
+  .doctorContent {
+    border: 1px solid #aeb4af33;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    .content {
+      padding-bottom: 20px;
+      h3 {
+        //styleName: Header-6 Bold;
+        font-family: $font-family;
+        color: #28293d;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0;
+        margin-top: 16px;
+      }
+      p {
+        //styleName: Body-1 Regular;
+        margin: 0;
+        margin-top: 2px;
+        font-family: $font-family;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+    }
+  }
+}

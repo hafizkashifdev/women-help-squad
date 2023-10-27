@@ -1,0 +1,26 @@
+@import "../../../bootstrap/_variables.scss";
+@import "../../../bootstrap/mixins";
+
+.foodListing {
+  padding: 40px 0;
+  padding-bottom: 80px;
+  .content {
+    h2 {
+      @include heading2;
+
+      margin-bottom: 40px;
+      @media screen and (max-width: 992px) {
+        margin-top: 20px;
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+    button {
+      @include pinkButton;
+      margin-bottom: 40px;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+}

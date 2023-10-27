@@ -1,0 +1,37 @@
+@import "../../../bootstrap/_variables.scss";
+@import "../../../bootstrap/mixins";
+
+.heroAbout {
+  background: linear-gradient(
+    95.08deg,
+    rgba(253, 120, 153, 0.5) 7.27%,
+    rgba(248, 214, 221, 0) 97.26%
+  );
+
+  padding: 90px 0;
+  padding-bottom: 60px;
+  h1 {
+    font-family: $font-family;
+    color: black;
+    font-size: 70px;
+
+    font-weight: 700;
+    line-height: 85px;
+    letter-spacing: 0em;
+    margin-bottom: 30px;
+  }
+  p {
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: #000000cc;
+    max-width: 740px;
+  }
+  img {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}

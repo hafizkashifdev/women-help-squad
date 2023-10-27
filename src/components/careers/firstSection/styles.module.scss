@@ -1,0 +1,31 @@
+@import "../../../bootstrap/_variables.scss";
+@import "../../../bootstrap/mixins";
+
+.heroAbout {
+  padding: 90px 0;
+  padding-bottom: 0px;
+  h2 {
+    font-family: $font-family;
+    color: $color-primary;
+    font-size: 70px;
+
+    font-weight: 700;
+    line-height: 85px;
+    letter-spacing: 0em;
+    margin-bottom: 30px;
+  }
+  p {
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: #000000cc;
+    max-width: 740px;
+  }
+  img {
+    width: 100%;
+    max-width: 80%;
+    object-fit: cover;
+  }
+}

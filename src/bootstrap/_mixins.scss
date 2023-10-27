@@ -1,0 +1,104 @@
+@import "./variables";
+
+@mixin ThemeButton($backColor) {
+  min-height: 44px;
+  border-radius: 4px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-family;
+  background-color: $backColor;
+  text-transform: capitalize;
+  border: 1px solid $color-primary;
+  @if $backColor == $color-primary {
+    &:hover {
+      color: $backColor;
+      background-color: transparent;
+    }
+  }
+  @if $backColor == transparent {
+    &:hover {
+      color: white;
+      background-color: $color-primary;
+    }
+  }
+}
+
+@mixin HeroButton($backColor) {
+  min-height: 51px;
+  border-radius: 4px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-family;
+  background-color: $backColor;
+  text-transform: capitalize;
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0px;
+
+  border: 1px solid #ffffff;
+  @if $backColor == white {
+    color: black;
+    &:hover {
+      color: white;
+      background-color: transparent;
+    }
+  }
+  @if $backColor == transparent {
+    color: white;
+    &:hover {
+      color: black;
+      background-color: white;
+    }
+  }
+}
+
+@mixin pinkButton {
+  background-color: #fcbfcb33;
+  border: 1px solid #fcbfcb33;
+  border-radius: 50px;
+  color: $color-primary;
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 146px;
+  min-height: 35px;
+  span {
+    margin-left: 5px;
+  }
+  &:active {
+    box-shadow: none;
+    background-color: #fcbfcb33;
+    border: 1px solid #fcbfcb33;
+    color: $color-primary;
+  }
+  &:focus-visible {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+@mixin heading2 {
+  font-family: $font-family;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  color: #28293d;
+
+  @media screen and (max-width: 992px) {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}

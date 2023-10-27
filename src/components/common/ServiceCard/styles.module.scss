@@ -1,0 +1,57 @@
+@import "../../../bootstrap/_variables.scss";
+@import "../../../bootstrap/mixins";
+
+.serviceCard {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  .serviceImage {
+    width: 100%;
+    max-width: 100%;
+    img {
+      max-width: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .serviceContent {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    .content {
+      h3 {
+        //styleName: Header-6 Bold;
+        font-family: $font-family;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        color: #28293d;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+      p {
+        //styleName: Body Text/Body 4 - 16px;
+        font-family: $font-family;
+        font-size: 16px;
+        font-weight: 400;
+        min-height: 90px;
+        line-height: 28px;
+        letter-spacing: 0px;
+        color: #555770;
+        text-align: left;
+        margin-bottom: 16px;
+      }
+    }
+    .button {
+      width: 100%;
+      button {
+        @include ThemeButton($color-primary);
+        max-width: 170px;
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+@import "../../bootstrap/_variables.scss";
+@import "../../bootstrap/mixins";
+
+.footerParent {
+  background-color: black;
+  padding: 40px 0;
+  padding-top: 80px;
+  .footerListing {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    @media screen and (max-width: 1100px) {
+      justify-content: center;
+    }
+    .footerMenu {
+      display: block;
+      @media screen and (max-width: 1400px) {
+        flex: 0 0 20%;
+      }
+      @media screen and (max-width: 1100px) {
+        flex: 0 0 100%;
+        text-align: center;
+      }
+      h3 {
+        //styleName: Body Text/Body 5 -16px;
+        font-family: $font-family;
+        font-size: 18px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 0px;
+        margin-bottom: 20px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          font-family: $font-family;
+          color: white;
+          font-size: 14px;
+          font-weight: 400;
+          text-transform: capitalize;
+          line-height: 16px;
+          letter-spacing: 0px;
+          cursor: pointer;
+          margin-bottom: 16px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .lineBar {
+    width: 100%;
+    background: #ffffff80;
+    height: 1px;
+    margin: 60px 0;
+    margin-top: 80px;
+  }
+  .botomFooter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media screen and (max-width: 990px) {
+      justify-content: center;
+      row-gap: 30px;
+    }
+    .leftSide {
+      font-family: $font-family;
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: capitalize;
+      line-height: 34px;
+      color: white;
+      letter-spacing: 0.02em;
+    }
+    .rightSide {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      svg {
+        max-width: 28px;
+        max-height: 28px;
+      }
+    }
+  }
+}

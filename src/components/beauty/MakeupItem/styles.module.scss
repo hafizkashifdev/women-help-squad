@@ -1,0 +1,37 @@
+@import "../../../bootstrap/_variables.scss";
+@import "../../../bootstrap/mixins";
+
+.makeupItem {
+  padding: 80px 0;
+  margin-bottom: 30px;
+  .leftSide {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      //styleName: Heading/H1 40px;
+      @include heading2;
+      text-align: left;
+      margin-bottom: 32px;
+    }
+    p {
+      font-family: $font-family;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 38px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: #000000cc;
+      max-width: 800px;
+    }
+  }
+  .rightSide {
+    width: 100%;
+    img {
+      width: 100%;
+      object-fit: cover;
+      max-width: 100%;
+    }
+  }
+}
